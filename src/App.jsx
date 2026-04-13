@@ -3,7 +3,8 @@ import mqtt from "mqtt"
 import { db } from "./firebase"
 import { collection, query, where, orderBy, limit, getDocs, Timestamp } from "firebase/firestore"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
-
+console.log("App đang chạy")
+console.log("Firebase DB:", db)
 const ZONES = [1, 2, 3]
 const ZONE_COLORS = { 1: "#1D9E75", 2: "#378ADD", 3: "#D85A30" }
 
